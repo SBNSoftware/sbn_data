@@ -77,9 +77,11 @@ Below is a complete list of the beam configurations used for this analysis:
 
 This directory houses the outputs of the Principal Component Analysis. 
 
-- `compontents/hpc_evec_*` unit principal components.
-- `components/hpc_evec_scaled_*` principal components scaled by the corresponding eigenvalue.
+- `eigenvectors/hevec_*` unit principal components.
+- `principal_components/hpc_*` principal components scaled by the sqrt of the corresponding eigenvalue and transposed back into bins of neutrino energy.
 - `hcov_pca` reconstructed hadron covariance matrix after discarding degenerate components.
+- `heigenvals` each bin of this histogram holds the eigenvalues extracted from the PCA.
+- `heighvenal_frac` same as the previous, but each eigenvalue is divided by the sum of all eigenvalues.
 
 ### `statistical_uncertainties`
 
