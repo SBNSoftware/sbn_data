@@ -16,7 +16,8 @@ Common:
    	 EnvSet(SBNDATA_VERSION, ${UPS_PROD_VERSION} )
  	 EnvSet(SBNDATA_DIR, ${UPS_PROD_DIR}/ )
 	 pathPrepend(FW_SEARCH_PATH, ${UPS_PROD_DIR} )
-
+   pathPrepend(FW_SEARCH_PATH, ${UPS_PROD_DIR}/Calorimetry )
+   pathPrepend(FW_SEARCH_PATH, ${UPS_PROD_DIR}/beamData )
 
 End:
 # End Group definition
